@@ -1,7 +1,10 @@
 POKEDÉX PROJECT 💻
 
-This is my first ever project using JavaScript. Still learning, every single day.
+This is my first ever JavaScript project. Still learning, every single day.
+
+Used Poké API for all names, numbers and images of all pokemons.
+Url API: https://pokeapi.co/
 
 Check it out! 👇
 
-Responsive? ✔️
+![pokedex](https://github.com/pedrofsmartins3/pokedex/assets/148903655/51cd7863-db97-41d0-89fe-81af4853f04e)
