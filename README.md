@@ -7,4 +7,4 @@ Url API: https://pokeapi.co/
 
 Check it out! 👇
 
-![pokedex](https://github.com/pedrofsmartins3/pokedex/assets/148903655/51cd7863-db97-41d0-89fe-81af4853f04e)
+![pokedex](https://github.com/pedrofsmartins3/pokedex/assets/148903655/890faab6-ddb9-4276-bc8e-b4572cfa91a6)
