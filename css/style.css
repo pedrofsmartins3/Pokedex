@@ -10,17 +10,15 @@ font-family: "Oxanium", cursive;
 body {
     text-align: center;
     background:  linear-gradient(to bottom, #6ab7f5, #fff);
-    min-height: 100vh; /*cobrir página completa com o background*/
+    min-height: 100vh;
 }
 
-
 main {
-    display: inline-block; /*vai ter propriedades inline e block*/
+    display: inline-block;
     margin-top: 2%;
     padding: 15px;
     position: relative;
 }
-/* o position:relative na main serve para ao usar position:absolute nos seguintes elementos esses respeitem as demilitações da main*/
 
 .pokedex {
     width: 100%;
@@ -29,9 +27,9 @@ main {
 
 .pokemon_image {
     position: absolute;
-    bottom: 55%; /*usamos % para ficar melhor em todas as resoluções*/
+    bottom: 55%;
     left: 45%;
-    transform: translate(-40% , 20%); /*para centralizar -> translate(x,y)*/
+    transform: translate(-40% , 20%);
     height: 18%;
 }
 
@@ -41,12 +39,12 @@ main {
     color: #aaa;
     top: 55%;
     right: 27%;
-    font-size: clamp(4px, 5vw, 25px); /*clamp(min,ideal,max -> para ter sempre um bom tamanho de letra*/
+    font-size: clamp(4px, 5vw, 25px);
 }
 
 .pokemon_name {
     color: #3a444d;
-    text-transform: capitalize; /*deixar 1ª letra Maiúscula*/
+    text-transform: capitalize;
 }
 
 .form {
@@ -57,9 +55,9 @@ main {
 }
 
 .input_search {
-    width: 100%; /*cobrir 100% do width do .form*/
+    width: 100%;
     padding: 3%;
-    outline: none; /*tirar linha à volta*/
+    outline: none;
     border: 2px solid #333;
     border-radius: 5px;
     font-weight: 600;
@@ -67,7 +65,6 @@ main {
     color: #3a444d;
     font-size: clamp(4px, 5vw, 1rem);
     box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
-    /* box-shadow: x y desfocque cor, x2 y2 desfoque2 cor2; (2sombras)*/
 }
 
 .buttons {
@@ -76,12 +73,12 @@ main {
     left: 50%;
     width: 65%;
     transform: translate(-57%, 0);
-    display: flex; /*por os 2 botões na mesma linha*/
-    gap: 20px; /*separar os 2 botões com 20px*/
+    display: flex; 
+    gap: 20px;
 }
 
 .button {
-    width: 50%; /*dar metade do width a cada botão*/
+    width: 50%;
     padding: 4%;
     border: 2px solid #000;
     border-radius: 5px;
@@ -92,7 +89,7 @@ main {
     box-shadow: -2px 3px 0 #222, -4px 6px 0 black;
 }
 
-.button:active { /*quando ele estiver ativo, quando clicar*/
-    box-shadow: inset -4px 4px 0 #222; /*criar sombra interna*/
+.button:active {
+    box-shadow: inset -4px 4px 0 #222;
     font-size: 0.9rem;
 }
