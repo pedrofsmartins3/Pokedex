@@ -10,22 +10,16 @@ let searchPokemon = 1;
 
 const fetchPokemon = async (pokemon) => {
     const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
-<<<<<<< HEAD
-=======
-
->>>>>>> 8d88a1c066b0ec09a1a3e31a8026c18a171f4c74
     if (APIResponse.status === 200) {
         const data = await APIResponse.json();
         return data;
     }
 }
 
-<<<<<<< HEAD
 const renderPokemon = async (pokemon) => { 
     
     pokemonName.innerHTML = "Loading...";
     pokemonNumber.innerHTML = "";
-
     const data = await fetchPokemon(pokemon);
 
         if (data) {
@@ -34,20 +28,6 @@ const renderPokemon = async (pokemon) => {
             pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
             pokemonImage.style.display = "block";
             input.value = "";
-=======
-const renderPokemon = async (pokemon) => {     
-    pokemonName.innerHTML = "Loading..."; 
-    pokemonNumber.innerHTML = "";
-
-    const data = await fetchPokemon(pokemon); 
-
-        if (data) { 
-            pokemonName.innerHTML = data.name;
-            pokemonNumber.innerHTML = data.id;
-            pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
-            pokemonImage.style.display = "block"; 
-            input.value = ""; 
->>>>>>> 8d88a1c066b0ec09a1a3e31a8026c18a171f4c74
             searchPokemon = data.id;
         } else {
             pokemonName.innerHTML = "Not found :C";
@@ -63,11 +43,7 @@ const funcaosubmit = (event) => {
 form.addEventListener('submit', funcaosubmit)
 
 buttonPrev.addEventListener('click', () => {
-<<<<<<< HEAD
     if (searchPokemon > 1) {
-=======
-    if (searchPokemon > 1) { 
->>>>>>> 8d88a1c066b0ec09a1a3e31a8026c18a171f4c74
         searchPokemon --;
         renderPokemon(searchPokemon);
     }    
@@ -80,8 +56,4 @@ buttonNext.addEventListener('click', () => {
     }
 })
 
-<<<<<<< HEAD
 renderPokemon(searchPokemon);
-=======
-renderPokemon(searchPokemon);
->>>>>>> 8d88a1c066b0ec09a1a3e31a8026c18a171f4c74
